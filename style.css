@@ -1,4 +1,4 @@
-body {
+ body {
     background: rgb(60, 86, 173);
     color: rgb(64, 15, 208);
     padding: 20px;
@@ -16,7 +16,7 @@ nav {
    margin-bottom: 20px;
     display: flex;
     padding: 10px;
-    
+    border-radius : 30px
 }
 h1 {
     display: flex;
@@ -39,7 +39,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(255, 234, 176);
+    background: rgb(233, 192, 79);
     display: flexbox;
 }
 .sidebar {
@@ -63,20 +63,92 @@ size: 20px;
 .content {
     flex: 1;
     padding: 16px;
+} 
+
+
+
+         /* portfolio styles */
+.content h1 {
+color: rgb(0, 102, 255);
 }
 
-/* portfolio styles */
-#interests {
-    border: 4px silver ridge;
-    padding: 10px;
+#portfolio {
+list-style-type: 1;
+padding-left: 10;
 }
-h2, h3 {
-    margin: 2px;
+
+#portfolio li {
+background: #7df2ff;
+padding: 10px;
+border-radius: 10px;
+margin-bottom: 10px;
 }
-#all-contents {
-    max-width: 800px;
-    margin: auto;
- }
+
+#portfolio li:hover {
+background: #c1e6ff;
+}
+
+#portfolio a {
+text-decoration: none;
+color: #72bdff;
+}
+
+            /* responsive web design */
+            @media screen and (min-width: 150px) and (max-width: 1080px) {
+              main {
+                height: 100ch;
+                zoom: 1.5;
+                display: grid;
+              }
+
+              h1 {
+                font-size: 44px;
+              }
+
+              h2 {
+                font-size: 42px;
+              }
+
+              h3 {
+                font-size: 36px;
+              }
+
+              #all-contents {
+                height: 200ch;
+                margin: none;
+              }
+
+              a {
+                font-size: 42px;
+              }
+
+              .sidebar {
+                margin-right: 10
+              px;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .sidebar-img {
+                width: 100%;
+              }
+
+              p,
+              li {
+                font-size: 30px;
+              }
+
+              .content {
+                align-content: last baseline;
+                justify-content: last baseline;
+              }
+          }
 
 
 
+
+
+
+
+
+                 
