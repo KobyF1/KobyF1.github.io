@@ -44,7 +44,9 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-
+    createPlatform(500, 300, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(600, 99, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(700, 600, 100, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
 
     
     // TODO 2
@@ -53,7 +55,9 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-
+    createCollectable("steve", 500, 700, 20, 0.5); // creates a "steve" collectible at the coordinates (600, 500), falling with a high gravity of 10, and bouncing with 100% bounce
+    createCollectable("grace", 500, 300); // creates a "grace" collectible at the coordinates (600, 500), falling with default gravity and bouncing with default bounce %
+    createCollectable("steve", 600, 400); // creates a "grace" collectible at the coordinates (600, 500), falling with default gravity and bouncing with default bounce %
 
 
     // TODO 3
@@ -62,9 +66,10 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
+    createCannon("left", 600, 2000); // cannon on left wall, 600px down, shooting once per second
+    createCannon("right", 700, 2000); // cannon on right wall, 600px down, shooting once per second
 
-
-
+    createCannon("bottom", 800, 2000); // cannon on left  wall, 700px down, shooting once per second
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
